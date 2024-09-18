@@ -14,6 +14,13 @@
 		CA0560212C98C5E9007E2C57 /* RidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0560202C98C5E9007E2C57 /* RidesTests.swift */; };
 		CA05602B2C98C5E9007E2C57 /* RidesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA05602A2C98C5E9007E2C57 /* RidesUITests.swift */; };
 		CA05602D2C98C5E9007E2C57 /* RidesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA05602C2C98C5E9007E2C57 /* RidesUITestsLaunchTests.swift */; };
+		CA7DDFE92C9B275B00A04CC7 /* Vehicule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFE82C9B275B00A04CC7 /* Vehicule.swift */; };
+		CA7DDFEB2C9B2E0B00A04CC7 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = CA7DDFEA2C9B2E0B00A04CC7 /* menu.json */; };
+		CA7DDFEE2C9B2EA800A04CC7 /* VehiculeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFED2C9B2EA800A04CC7 /* VehiculeRow.swift */; };
+		CA7DDFF02C9B2EB900A04CC7 /* VehiculeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFEF2C9B2EB900A04CC7 /* VehiculeDetails.swift */; };
+		CA7DDFF32C9B323200A04CC7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFF22C9B323200A04CC7 /* Helper.swift */; };
+		CA7DDFF62C9B5E7D00A04CC7 /* RidesAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFF52C9B5E7D00A04CC7 /* RidesAPIManager.swift */; };
+		CA7DDFF92C9B615800A04CC7 /* VehiculeListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFF82C9B615800A04CC7 /* VehiculeListVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		CA0560262C98C5E9007E2C57 /* RidesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RidesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA05602A2C98C5E9007E2C57 /* RidesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesUITests.swift; sourceTree = "<group>"; };
 		CA05602C2C98C5E9007E2C57 /* RidesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA7DDFE82C9B275B00A04CC7 /* Vehicule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicule.swift; sourceTree = "<group>"; };
+		CA7DDFEA2C9B2E0B00A04CC7 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		CA7DDFED2C9B2EA800A04CC7 /* VehiculeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculeRow.swift; sourceTree = "<group>"; };
+		CA7DDFEF2C9B2EB900A04CC7 /* VehiculeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculeDetails.swift; sourceTree = "<group>"; };
+		CA7DDFF22C9B323200A04CC7 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		CA7DDFF52C9B5E7D00A04CC7 /* RidesAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesAPIManager.swift; sourceTree = "<group>"; };
+		CA7DDFF82C9B615800A04CC7 /* VehiculeListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculeListVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +108,12 @@
 		CA05600E2C98C5E8007E2C57 /* Rides */ = {
 			isa = PBXGroup;
 			children = (
+				CA7DDFF72C9B611300A04CC7 /* ViewModels */,
+				CA7DDFF42C9B5E5C00A04CC7 /* Networking */,
+				CA7DDFF12C9B320B00A04CC7 /* Helpers */,
+				CA7DDFEC2C9B2E5200A04CC7 /* Views */,
+				CA7DDFE72C9B270700A04CC7 /* Model */,
 				CA05600F2C98C5E8007E2C57 /* RidesApp.swift */,
-				CA0560112C98C5E8007E2C57 /* ContentView.swift */,
 				CA0560132C98C5E9007E2C57 /* Assets.xcassets */,
 				CA0560152C98C5E9007E2C57 /* Preview Content */,
 			);
@@ -125,6 +143,49 @@
 				CA05602C2C98C5E9007E2C57 /* RidesUITestsLaunchTests.swift */,
 			);
 			path = RidesUITests;
+			sourceTree = "<group>";
+		};
+		CA7DDFE72C9B270700A04CC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA7DDFEA2C9B2E0B00A04CC7 /* menu.json */,
+				CA7DDFE82C9B275B00A04CC7 /* Vehicule.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA7DDFEC2C9B2E5200A04CC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA0560112C98C5E8007E2C57 /* ContentView.swift */,
+				CA7DDFED2C9B2EA800A04CC7 /* VehiculeRow.swift */,
+				CA7DDFEF2C9B2EB900A04CC7 /* VehiculeDetails.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA7DDFF12C9B320B00A04CC7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CA7DDFF22C9B323200A04CC7 /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CA7DDFF42C9B5E5C00A04CC7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CA7DDFF52C9B5E7D00A04CC7 /* RidesAPIManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CA7DDFF72C9B611300A04CC7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CA7DDFF82C9B615800A04CC7 /* VehiculeListVM.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA7DDFEB2C9B2E0B00A04CC7 /* menu.json in Resources */,
 				CA0560172C98C5E9007E2C57 /* Preview Assets.xcassets in Resources */,
 				CA0560142C98C5E9007E2C57 /* Assets.xcassets in Resources */,
 			);
@@ -258,7 +320,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA0560122C98C5E8007E2C57 /* ContentView.swift in Sources */,
+				CA7DDFF62C9B5E7D00A04CC7 /* RidesAPIManager.swift in Sources */,
+				CA7DDFEE2C9B2EA800A04CC7 /* VehiculeRow.swift in Sources */,
+				CA7DDFF92C9B615800A04CC7 /* VehiculeListVM.swift in Sources */,
 				CA0560102C98C5E8007E2C57 /* RidesApp.swift in Sources */,
+				CA7DDFF02C9B2EB900A04CC7 /* VehiculeDetails.swift in Sources */,
+				CA7DDFE92C9B275B00A04CC7 /* Vehicule.swift in Sources */,
+				CA7DDFF32C9B323200A04CC7 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +498,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +528,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
