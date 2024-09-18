@@ -9,6 +9,7 @@ import SwiftUI
 
 struct VehiculeDetails: View {
     let item: VehiculeItem
+    @EnvironmentObject private var themeManager: ThemeManager
     
     var body: some View {
         
@@ -17,40 +18,52 @@ struct VehiculeDetails: View {
             if let vin = item.vin {
                 HStack {
                     Text("Vehicule Vin :")
-                        .bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(themeManager.selectedTheme.captionTxtFont)
+                        .foregroundColor(themeManager.selectedTheme.textBoxColor)
                     Text(vin)
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(themeManager.selectedTheme.bodyTextFont)
+                        .foregroundColor(themeManager.selectedTheme.secondoryThemeColor)
                 }
                 
             }
             if let model = item.make_and_model {
                 HStack {
                     Text("Vehicule Model :")
-                        .bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(themeManager.selectedTheme.captionTxtFont)
+                        .foregroundColor(themeManager.selectedTheme.textBoxColor)
                     Text(model)
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(themeManager.selectedTheme.bodyTextFont)
+                        .foregroundColor(themeManager.selectedTheme.secondoryThemeColor)
                 }
             }
             
             if let color = item.color {
                 HStack {
                     Text("Vehicule Color :")
-                        .bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(themeManager.selectedTheme.captionTxtFont)
+                        .foregroundColor(themeManager.selectedTheme.textBoxColor)
                     Text(color)
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(themeManager.selectedTheme.bodyTextFont)
+                        .foregroundColor(themeManager.selectedTheme.secondoryThemeColor)
                 }
             }
             
             if let type = item.car_type {
                 HStack {
                     Text("Vehicule Type :")
-                        .bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(themeManager.selectedTheme.captionTxtFont)
+                        .foregroundColor(themeManager.selectedTheme.textBoxColor)
                     Text(type)
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(themeManager.selectedTheme.bodyTextFont)
+                        .foregroundColor(themeManager.selectedTheme.secondoryThemeColor)
                 }
             }
         }

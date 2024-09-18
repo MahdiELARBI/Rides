@@ -19,10 +19,10 @@ struct ContentView: View {
     @ObservedObject var viewModel: VehiculeListVM
     @State private var selectedSortField: SortField = .vin
     @State var sortReverse = false
+    @StateObject var themeManager = ThemeManager()
     
     var body: some View {
         NavigationStack {
-            
             // Creating The search part
             HStack(alignment: .top) {
                 TextField("Write your Number", text: $viewModel.searchText, axis: .vertical)
@@ -50,7 +50,7 @@ struct ContentView: View {
                 Section {
                     ForEach(viewModel.vehiculeResults, id: \.self) { item in
                         NavigationLink(value: item) {
-                            VehiculeRow(item: item)
+                            VehiculeRow(item: item).environmentObject(themeManager)
                         }
                     }
                 } header: {
@@ -80,7 +80,7 @@ struct ContentView: View {
                 }
             }
             .navigationDestination(for: VehiculeItem.self, destination: { item in
-                VehiculeDetails(item: item)
+                VehiculeDetails(item: item).environmentObject(themeManager)
             })
             .navigationTitle("Vehicle List")
             .listStyle(.grouped) // To change the list type

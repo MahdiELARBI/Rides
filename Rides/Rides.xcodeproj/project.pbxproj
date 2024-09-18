@@ -21,6 +21,10 @@
 		CA7DDFF32C9B323200A04CC7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFF22C9B323200A04CC7 /* Helper.swift */; };
 		CA7DDFF62C9B5E7D00A04CC7 /* RidesAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFF52C9B5E7D00A04CC7 /* RidesAPIManager.swift */; };
 		CA7DDFF92C9B615800A04CC7 /* VehiculeListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFF82C9B615800A04CC7 /* VehiculeListVM.swift */; };
+		CA7DDFFD2C9B726400A04CC7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7DDFFC2C9B726400A04CC7 /* Colors.xcassets */; };
+		CA7DDFFF2C9B728B00A04CC7 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFFE2C9B728B00A04CC7 /* ThemeProtocol.swift */; };
+		CA7DE0012C9B72CC00A04CC7 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DE0002C9B72CC00A04CC7 /* ThemeManager.swift */; };
+		CA7DE0032C9B737F00A04CC7 /* MainTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DE0022C9B737F00A04CC7 /* MainTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		CA7DDFF22C9B323200A04CC7 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		CA7DDFF52C9B5E7D00A04CC7 /* RidesAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesAPIManager.swift; sourceTree = "<group>"; };
 		CA7DDFF82C9B615800A04CC7 /* VehiculeListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculeListVM.swift; sourceTree = "<group>"; };
+		CA7DDFFC2C9B726400A04CC7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CA7DDFFE2C9B728B00A04CC7 /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
+		CA7DE0002C9B72CC00A04CC7 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		CA7DE0022C9B737F00A04CC7 /* MainTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +116,14 @@
 		CA05600E2C98C5E8007E2C57 /* Rides */ = {
 			isa = PBXGroup;
 			children = (
+				CA7DE0042C9B73A000A04CC7 /* Managers */,
+				CA7DDFFA2C9B720A00A04CC7 /* Resources */,
 				CA7DDFF72C9B611300A04CC7 /* ViewModels */,
 				CA7DDFF42C9B5E5C00A04CC7 /* Networking */,
 				CA7DDFF12C9B320B00A04CC7 /* Helpers */,
 				CA7DDFEC2C9B2E5200A04CC7 /* Views */,
 				CA7DDFE72C9B270700A04CC7 /* Model */,
 				CA05600F2C98C5E8007E2C57 /* RidesApp.swift */,
-				CA0560132C98C5E9007E2C57 /* Assets.xcassets */,
 				CA0560152C98C5E9007E2C57 /* Preview Content */,
 			);
 			path = Rides;
@@ -186,6 +195,41 @@
 				CA7DDFF82C9B615800A04CC7 /* VehiculeListVM.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CA7DDFFA2C9B720A00A04CC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA7DDFFB2C9B724500A04CC7 /* Fonts */,
+				CA0560132C98C5E9007E2C57 /* Assets.xcassets */,
+				CA7DDFFC2C9B726400A04CC7 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CA7DDFFB2C9B724500A04CC7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CA7DE0042C9B73A000A04CC7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CA7DE0052C9B73A800A04CC7 /* ThemeManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CA7DE0052C9B73A800A04CC7 /* ThemeManager */ = {
+			isa = PBXGroup;
+			children = (
+				CA7DDFFE2C9B728B00A04CC7 /* ThemeProtocol.swift */,
+				CA7DE0002C9B72CC00A04CC7 /* ThemeManager.swift */,
+				CA7DE0022C9B737F00A04CC7 /* MainTheme.swift */,
+			);
+			path = ThemeManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA7DDFEB2C9B2E0B00A04CC7 /* menu.json in Resources */,
+				CA7DDFFD2C9B726400A04CC7 /* Colors.xcassets in Resources */,
 				CA0560172C98C5E9007E2C57 /* Preview Assets.xcassets in Resources */,
 				CA0560142C98C5E9007E2C57 /* Assets.xcassets in Resources */,
 			);
@@ -325,6 +370,9 @@
 				CA7DDFF92C9B615800A04CC7 /* VehiculeListVM.swift in Sources */,
 				CA0560102C98C5E8007E2C57 /* RidesApp.swift in Sources */,
 				CA7DDFF02C9B2EB900A04CC7 /* VehiculeDetails.swift in Sources */,
+				CA7DDFFF2C9B728B00A04CC7 /* ThemeProtocol.swift in Sources */,
+				CA7DE0032C9B737F00A04CC7 /* MainTheme.swift in Sources */,
+				CA7DE0012C9B72CC00A04CC7 /* ThemeManager.swift in Sources */,
 				CA7DDFE92C9B275B00A04CC7 /* Vehicule.swift in Sources */,
 				CA7DDFF32C9B323200A04CC7 /* Helper.swift in Sources */,
 			);

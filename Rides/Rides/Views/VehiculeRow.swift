@@ -9,12 +9,16 @@ import SwiftUI
 
 struct VehiculeRow: View {
     let item: VehiculeItem
+    @EnvironmentObject private var themeManager: ThemeManager
     
     var body: some View {
         VStack(alignment: .leading) {
             Text(item.make_and_model ?? "")
-                .font(.headline)
+                .font(themeManager.selectedTheme.textTitleFont)
+                .foregroundColor(themeManager.selectedTheme.primaryThemeColor)
             Text(item.vin ?? "")
+                .font(themeManager.selectedTheme.normalBtnTitleFont)
+                .foregroundColor(themeManager.selectedTheme.negativeBtnTitleColor)
         }
     }
 }
