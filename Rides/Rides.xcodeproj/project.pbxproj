@@ -25,6 +25,17 @@
 		CA7DDFFF2C9B728B00A04CC7 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFFE2C9B728B00A04CC7 /* ThemeProtocol.swift */; };
 		CA7DE0012C9B72CC00A04CC7 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DE0002C9B72CC00A04CC7 /* ThemeManager.swift */; };
 		CA7DE0032C9B737F00A04CC7 /* MainTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DE0022C9B737F00A04CC7 /* MainTheme.swift */; };
+		CA7DE0072C9BCBB500A04CC7 /* VehiculeListVMUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DE0062C9BCBB500A04CC7 /* VehiculeListVMUnitTests.swift */; };
+		CA7DE0082C9BCC4A00A04CC7 /* VehiculeListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFF82C9B615800A04CC7 /* VehiculeListVM.swift */; };
+		CA7DE0092C9BCF0900A04CC7 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFFE2C9B728B00A04CC7 /* ThemeProtocol.swift */; };
+		CA7DE00A2C9BCF0900A04CC7 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DE0002C9B72CC00A04CC7 /* ThemeManager.swift */; };
+		CA7DE00B2C9BCF0900A04CC7 /* MainTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DE0022C9B737F00A04CC7 /* MainTheme.swift */; };
+		CA7DE00C2C9BCF2300A04CC7 /* RidesAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFF52C9B5E7D00A04CC7 /* RidesAPIManager.swift */; };
+		CA7DE00D2C9BCF2300A04CC7 /* VehiculeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFEF2C9B2EB900A04CC7 /* VehiculeDetails.swift */; };
+		CA7DE00E2C9BCF2300A04CC7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFF22C9B323200A04CC7 /* Helper.swift */; };
+		CA7DE00F2C9BCF2300A04CC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0560112C98C5E8007E2C57 /* ContentView.swift */; };
+		CA7DE0102C9BCF2300A04CC7 /* VehiculeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFED2C9B2EA800A04CC7 /* VehiculeRow.swift */; };
+		CA7DE0112C9BCF2900A04CC7 /* Vehicule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DDFE82C9B275B00A04CC7 /* Vehicule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +77,7 @@
 		CA7DDFFE2C9B728B00A04CC7 /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
 		CA7DE0002C9B72CC00A04CC7 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		CA7DE0022C9B737F00A04CC7 /* MainTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTheme.swift; sourceTree = "<group>"; };
+		CA7DE0062C9BCBB500A04CC7 /* VehiculeListVMUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculeListVMUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				CA0560202C98C5E9007E2C57 /* RidesTests.swift */,
+				CA7DE0062C9BCBB500A04CC7 /* VehiculeListVMUnitTests.swift */,
 			);
 			path = RidesTests;
 			sourceTree = "<group>";
@@ -382,7 +395,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA7DE0082C9BCC4A00A04CC7 /* VehiculeListVM.swift in Sources */,
+				CA7DE00C2C9BCF2300A04CC7 /* RidesAPIManager.swift in Sources */,
+				CA7DE0112C9BCF2900A04CC7 /* Vehicule.swift in Sources */,
+				CA7DE0102C9BCF2300A04CC7 /* VehiculeRow.swift in Sources */,
 				CA0560212C98C5E9007E2C57 /* RidesTests.swift in Sources */,
+				CA7DE00D2C9BCF2300A04CC7 /* VehiculeDetails.swift in Sources */,
+				CA7DE00A2C9BCF0900A04CC7 /* ThemeManager.swift in Sources */,
+				CA7DE00E2C9BCF2300A04CC7 /* Helper.swift in Sources */,
+				CA7DE00F2C9BCF2300A04CC7 /* ContentView.swift in Sources */,
+				CA7DE0072C9BCBB500A04CC7 /* VehiculeListVMUnitTests.swift in Sources */,
+				CA7DE00B2C9BCF0900A04CC7 /* MainTheme.swift in Sources */,
+				CA7DE0092C9BCF0900A04CC7 /* ThemeProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
