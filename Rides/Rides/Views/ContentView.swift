@@ -20,6 +20,7 @@ struct ContentView: View {
     @State private var selectedSortField: SortField = .vin
     @State var sortReverse = false
     @StateObject var themeManager = ThemeManager()
+    @State private var showAlert = false
     
     var body: some View {
         NavigationStack {
@@ -38,11 +39,14 @@ struct ContentView: View {
                     )
                     .padding(.leading, 20)
                 Button(action: {
-                    viewModel.searchForVehicules()
+                    onSendAction()
                 } ) {
                     Text("Search")
                 }
                 .padding(9)
+                .alert("Value is not in Range, please choose a value between [1..100]", isPresented: $showAlert) {
+                    Button("OK") { }
+                }
             }
             
             // Creating The Vehicule part
@@ -93,6 +97,14 @@ struct ContentView: View {
         switch selectedSortField {
         case .vin: viewModel.vehiculeResults.sort (by: sortReverse ? { $0.vin! > $1.vin! } : { $0.vin! < $1.vin! } )
         case .model: viewModel.vehiculeResults.sort (by: sortReverse ? { $0.make_and_model! > $1.make_and_model! } : { $0.make_and_model! < $1.make_and_model! } )
+        }
+    }
+    
+    private func onSendAction() {
+        if (viewModel.isInputInRange()) {
+            viewModel.searchForVehicules()
+        } else {
+            showAlert = true
         }
     }
 }

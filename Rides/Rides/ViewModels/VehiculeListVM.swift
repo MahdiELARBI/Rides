@@ -46,4 +46,11 @@ class VehiculeListVM: ObservableObject {
                                 
     }
     
+    
+    func isInputInRange() -> Bool {
+        if let value = Int(searchText), 1...100 ~= value {
+            return true
+        }
+        return false
+    }
 }
